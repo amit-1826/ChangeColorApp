@@ -1,0 +1,29 @@
+.header{
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    position: relative;
+}
+.header-text{
+    margin: 0;
+}
+
+.header .skew:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: visible;
+    width: 100%;
+    height: 250px;
+    background: #00bcd4;
+    z-index: -1;
+    -webkit-transform: skewY(-1deg);
+    -moz-transform: skewY(-1deg);
+    -ms-transform: skewY(-1deg);
+    -o-transform: skewY(-1deg);
+    transform: skewY(-1deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+  }
+  

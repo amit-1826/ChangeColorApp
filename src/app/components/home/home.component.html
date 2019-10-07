@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<!-- <h3 class="alert alert-success text-center">This is a background change color app</h3> -->
+<div class="container">
+<button class="btn btn-link" (click)="changeBackground('red')">Red</button>
+<button class="btn btn-link" (click)="changeBackground('blue')">Blue</button>
+<button class="btn btn-link" (click)="changeBackground('green')">Green</button>
+<button class="btn btn-link" (click)="changeBackground('yellow')">Yellow</button>
+<button class="btn btn-link" (click)="changeBackground('magenta')">Magenta</button>
+<button class="btn btn-link" (click)="changeBackground('orange')">Orange</button>
+<button class="btn btn-link" (click)="changeBackgroundRamdomly()">Random</button>
+
+<div class="box" [ngStyle]="{'background-color': bgColor}">
+      
+</div>
+</div>
